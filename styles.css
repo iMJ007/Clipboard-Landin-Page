@@ -1,0 +1,327 @@
+* {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* SECTION Header section */
+header {
+    background-image: url("images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* font-size: 18px; */
+}
+
+.downloadButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.downloadButtonsContainer>a {
+    background-color: #26BBA5;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.downloadButtonsContainer>a:nth-child(2) {
+    background-color: #5E75FE;
+    margin-top: 1rem;
+}
+
+.downloadButtonsContainer>a:hover {
+    box-shadow: 0px 10px 20px 0px rgba(38, 187, 165, .2);
+}
+
+.downloadButtonsContainer>a:nth-child(2):hover {
+    box-shadow: 0px 10px 20px 0px rgba(94, 117, 254, .2);
+}
+
+/* !SECTION */
+
+/* SECTION First Feature Section */
+#firstFeature {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 2rem 1rem;
+
+}
+
+.featureHeader {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, .70);
+    margin-bottom: 0rem;
+}
+
+p {
+    color: rgba(0, 0, 0, .35);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    max-width: 55ch;
+    text-align: center;
+}
+
+.subfeatures1 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+h2 {
+    color: rgba(0, 0, 0, .60);
+    margin-bottom: 0rem;
+}
+
+/* !SECTION */
+
+/* SECTION Second feature section */
+#secondFeature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#secondFeature>img {
+    max-width: 90vw;
+}
+
+/* !SECTION */
+
+/* SECTION Third feature section */
+#thirdFeature {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+/* !SECTION */
+
+/* SECTION : COMPANIES Section */
+#companiesSection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#companiesSection img {
+    max-width: 200px;
+}
+
+/* !SECTION */
+
+
+#summarySection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECTION FOOTER */
+footer {
+    background-color: #F5F6F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.footerLinksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footerLinksContainer>img {
+    width: 50%;
+}
+
+.footerLinks {
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footerLinks>a {
+    padding: 1rem;
+    font-weight: 600;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.footerSocialLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.footerSocialLinks>a svg {
+    transition: 300ms;
+}
+
+.footerSocialLinks>a svg:hover,
+.footerSocialLinks>a svg:focus {
+    fill: #6173ff;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        background-image: url("images/bg-header-desktop.png");
+    }
+
+    .downloadButtonsContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .downloadButtonsContainer>a {
+        width: unset;
+        background-color: #26BBA5;
+        padding: .5rem 2rem;
+        color: #fff;
+        text-align: center;
+        border-radius: 2rem;
+    }
+
+    .downloadButtonsContainer>a:nth-child(2) {
+        background-color: #5E75FE;
+        margin-top: unset;
+        margin-left: 1rem;
+    }
+
+    #firstFeature {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #firstFeature>.featureHeader {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #firstFeature>img {
+        margin-left: -10rem;
+        margin-right: 10rem;
+    }
+
+    #firstFeature>.subfeatures1,
+    #firstFeature>.subfeatures1 p {
+        text-align: left;
+    }
+
+    #thirdFeature {
+        min-height: unset;
+    }
+
+    #thirdFeature>.featureHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #thirdFeature>.subfeatures1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #thirdFeature>.subfeatures1 div {
+        margin: 0 1rem 0 1rem;
+        padding: 0 1rem 0 1rem;
+    }
+
+    #thirdFeature>.subfeatures1 div img {
+        min-height: 40px;
+        width: auto;
+    }
+
+    #companiesSection {
+        min-height: 50vh;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #summarySection {
+        min-height: 50vh;
+    }
+
+    .footerLinksContainer {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        align-content: center;
+    }
+
+    .footerLinksContainer>img {
+        width: 50px;
+        margin: auto;
+    }
+
+    .footerLinks {
+        padding: 1rem 0 1rem 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        align-content: start;
+        justify-content: start;
+    }
+
+    .footerLinks>a {
+        text-align: left;
+    }
+
+    .footerSocialLinks {
+        margin: auto;
+    }
+}
