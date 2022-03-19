@@ -40,13 +40,14 @@ header {
 }
 
 .downloadButtonsContainer>a {
-    background-color: #26BBA5;
+    background-color: rgb(38, 187, 165);
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: #fff;
     text-align: center;
     border-radius: 2rem;
+    transition: 300ms;
 }
 
 .downloadButtonsContainer>a:nth-child(2) {
@@ -55,11 +56,13 @@ header {
 }
 
 .downloadButtonsContainer>a:hover {
-    box-shadow: 0px 10px 20px 0px rgba(38, 187, 165, .2);
+    box-shadow: 0px 10px 20px 0px rgba(38, 187, 165, .25);
+    background-color: rgb(31, 170, 149);
 }
 
 .downloadButtonsContainer>a:nth-child(2):hover {
-    box-shadow: 0px 10px 20px 0px rgba(94, 117, 254, .2);
+    box-shadow: 0px 10px 20px 0px rgba(94, 117, 254, .25);
+    background-color: #5267e0;
 }
 
 /* !SECTION */
@@ -189,6 +192,11 @@ footer {
     opacity: 0.5;
     text-align: center;
     font-size: 1.25rem;
+    transition: 300ms;
+}
+
+.footerLinks>a:hover {
+    color: #26BBA5;
 }
 
 .footerSocialLinks {
